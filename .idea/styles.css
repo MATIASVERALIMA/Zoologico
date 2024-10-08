@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-image: url('/asset/zoo-cartoon-illustration-with-safari-animals-elephant-giraffe-lion-monkey-panda-zebra-and-visitors-on-territory-on-forest-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.galeria figure {
+    text-align: center;
+    transition: transform 0.3s;
+}
+.galeria figure:hover {
+    transform: scale(1.05);
+}
+.galeria img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.galeria figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+/* Secciones */
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+section:hover {
+    transform: scale(1.02);
+}
+h2 {
+    font-size: 2rem;
+    color: #2C3E50;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+em {
+    font-style: italic;
+    color: #16A085;
+}
+
+footer {
+    text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    section {
+        padding: 20px;
+    }
+}
